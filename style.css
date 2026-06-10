@@ -11,7 +11,7 @@ body {
   overflow-x: hidden;
 }
 
-/* background */
+/* BACKGROUND */
 .bg {
   position: fixed;
   inset: 0;
@@ -23,19 +23,19 @@ body {
   z-index: -1;
 }
 
-/* layout */
+/* LAYOUT */
 .container {
-  max-width: 1100px;
+  max-width: 1050px;
   margin: 0 auto;
-  padding: 120px 20px;
+  padding: 85px 20px;
 }
 
-/* header */
+/* HEADER */
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 18px 40px;
+  padding: 12px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -53,58 +53,59 @@ nav a {
   margin-left: 18px;
   text-decoration: none;
   color: #aaa;
-  transition: 0.25s;
+  transition: 0.2s;
 }
 
 nav a:hover {
   color: white;
 }
 
-/* sections */
+/* SECTIONS */
 .section {
-  margin-bottom: 140px;
+  margin-bottom: 65px;
 }
 
+/* TYPO */
 h1 {
-  font-size: 48px;
-  letter-spacing: -1px;
+  font-size: 40px;
+  line-height: 1.1;
 }
 
 h2 {
-  font-size: 34px;
-  margin-bottom: 20px;
+  font-size: 28px;
+  margin-bottom: 14px;
 }
 
 .sub {
-  margin-top: 10px;
+  margin-top: 6px;
   color: #aaa;
-  font-size: 18px;
+  font-size: 16px;
 }
 
-/* cards */
+/* CARDS */
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  margin-top: 35px;
+  gap: 12px;
+  margin-top: 20px;
 }
 
 .card {
-  padding: 18px;
+  padding: 14px;
   border-radius: 14px;
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.06);
-  transition: 0.3s;
+  transition: 0.25s;
 }
 
 .card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
   background: rgba(255,255,255,0.08);
 }
 
-/* price */
+/* PRICE */
 .price-info {
-  margin-top: 25px;
+  margin-top: 18px;
   color: #aaa;
 }
 
@@ -112,15 +113,15 @@ h2 {
   color: #6c5ce7;
 }
 
-/* form */
+/* FORM */
 form {
-  margin-top: 20px;
+  margin-top: 12px;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 14px;
+  gap: 10px;
 }
 
 .field {
@@ -135,8 +136,8 @@ label {
 }
 
 input, select, textarea {
-  padding: 12px;
-  border-radius: 12px;
+  padding: 10px;
+  border-radius: 10px;
   border: 1px solid rgba(255,255,255,0.08);
   background: rgba(255,255,255,0.03);
   color: white;
@@ -144,7 +145,7 @@ input, select, textarea {
 }
 
 textarea {
-  min-height: 140px;
+  min-height: 110px;
   resize: none;
 }
 
@@ -153,38 +154,38 @@ textarea {
 }
 
 button {
-  margin-top: 18px;
-  padding: 14px 22px;
-  border-radius: 12px;
+  margin-top: 14px;
+  padding: 12px 18px;
+  border-radius: 10px;
   border: none;
   background: linear-gradient(135deg, #6c5ce7, #00cec9);
   color: white;
   cursor: pointer;
-  transition: 0.25s;
+  transition: 0.2s;
 }
 
 button:hover {
-  transform: scale(1.04);
+  transform: scale(1.03);
 }
 
-/* projects */
+/* PROJECTS */
 .grid-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 12px;
 }
 
 .project {
-  padding: 20px;
+  padding: 16px;
   border-radius: 14px;
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.06);
 }
 
-/* links */
+/* LINKS */
 .links a {
   display: block;
-  margin: 10px 0;
+  margin: 8px 0;
   color: #6c5ce7;
   text-decoration: none;
 }
@@ -193,17 +194,18 @@ button:hover {
   color: white;
 }
 
-/* contact */
+/* CONTACT */
 .contact-box {
-  padding: 20px;
+  padding: 16px;
   border-radius: 14px;
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.06);
 }
 
-/* responsive fallback */
+/* RESPONSIVE */
 @media (max-width: 900px) {
-  .cards, .grid-cards {
+  .cards,
+  .grid-cards {
     grid-template-columns: 1fr;
   }
 
