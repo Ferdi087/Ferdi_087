@@ -1,80 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ferdinand | Creative Dev</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
 
-  <div class="bg-glow"></div>
+<div class="bg"></div>
 
-  <header>
-    <div class="logo">Ferdinand.dev</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#order">Order</a>
-      <a href="#projects">Projects</a>
-      <a href="#links">Links</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header>
+  <div class="logo">Ferdinand.dev</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#order">Hire</a>
+    <a href="#projects">Projects</a>
+    <a href="#links">Links</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <!-- HOME -->
+<main class="container">
+
+  <!-- HERO -->
   <section id="home" class="section hero">
     <h1>Creative Developer & 3D Artist</h1>
-    <p>I work with Blender, gaming projects and cybersecurity testing.</p>
+    <p class="sub">
+      Blender • Game Systems • Cybersecurity Testing
+    </p>
 
     <div class="cards">
       <div class="card">Blender 3D Modeling</div>
-      <div class="card">Gaming Systems & Mods</div>
+      <div class="card">Gaming / Mods</div>
       <div class="card">Cybersecurity Testing</div>
     </div>
 
-    <div class="price-tag">Projects starting up to <b>$30</b></div>
+    <div class="price-info">
+      Projects: up to <span>$30</span>
+    </div>
   </section>
 
-  <!-- ORDER FORM -->
+  <!-- ORDER -->
   <section id="order" class="section">
     <h2>Hire Me</h2>
 
     <form id="orderForm">
+
       <div class="grid">
-
-        <label>
-          Service Type
+        <div class="field">
+          <label>Service</label>
           <select id="type">
-            <option value="Website">Website</option>
-            <option value="Android App">Android App</option>
-            <option value="Automation">Automation</option>
-            <option value="3D Model/Scene">3D Model / Scene</option>
+            <option>Website</option>
+            <option>Android App</option>
+            <option>Automation</option>
+            <option>3D Model/Scene</option>
           </select>
-        </label>
+        </div>
 
-        <label>
-          Style / Notes
-          <input type="text" id="style" placeholder="e.g. dark futuristic, low poly, minimal UI"/>
-        </label>
+        <div class="field">
+          <label>Style</label>
+          <input id="style" placeholder="dark, minimal, low poly..."/>
+        </div>
 
-        <label class="full">
-          Description
-          <textarea id="desc" placeholder="Describe your idea..." required></textarea>
-        </label>
+        <div class="field full">
+          <label>Description</label>
+          <textarea id="desc" placeholder="Explain your idea..." required></textarea>
+        </div>
 
-        <label>
-          First Name
-          <input type="text" id="name" required/>
-        </label>
+        <div class="field">
+          <label>Name</label>
+          <input id="name" required/>
+        </div>
 
-        <label>
-          Email
-          <input type="email" id="email" required/>
-        </label>
-
+        <div class="field">
+          <label>Email</label>
+          <input id="email" type="email" required/>
+        </div>
       </div>
 
-      <div class="price">Estimated price: <span id="price">$15 - $30</span></div>
+      <div class="price">
+        Estimated: <span id="price">$15 - $30</span>
+      </div>
 
       <button type="submit">Send Request</button>
     </form>
@@ -83,10 +91,11 @@
   <!-- PROJECTS -->
   <section id="projects" class="section">
     <h2>Projects</h2>
+
     <div class="grid-cards">
-      <div class="project">Placeholder Project 1</div>
-      <div class="project">Placeholder Project 2</div>
-      <div class="project">Placeholder Project 3</div>
+      <div class="project">Project 1 (placeholder)</div>
+      <div class="project">Project 2 (placeholder)</div>
+      <div class="project">Project 3 (placeholder)</div>
     </div>
   </section>
 
@@ -94,20 +103,25 @@
   <section id="links" class="section">
     <h2>Links</h2>
     <div class="links">
-      <a href="#">GitHub (placeholder)</a>
-      <a href="#">TikTok (placeholder)</a>
-      <a href="#">Sketchfab (placeholder)</a>
+      <a href="#">GitHub</a>
+      <a href="#">TikTok</a>
+      <a href="#">Sketchfab</a>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="section">
     <h2>Contact</h2>
-    <p>Name: Ferdinand</p>
-    <p>Email: fu282012@gmail.com</p>
-    <p>Note: I am under 18 years old.</p>
+
+    <div class="contact-box">
+      <p><b>Name:</b> Ferdinand</p>
+      <p><b>Email:</b> fu282012@gmail.com</p>
+      <p><b>Status:</b> Under 18</p>
+    </div>
   </section>
 
-  <script src="anim.js"></script>
+</main>
+
+<script src="anim.js"></script>
 </body>
 </html>
