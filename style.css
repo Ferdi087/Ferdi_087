@@ -213,3 +213,51 @@ button:hover {
     grid-template-columns: 1fr;
   }
 }
+/* ==========================================
+   LANDSCAPE OPTIMIZATIONS (QUERFORMAT)
+   ========================================== */
+@media (max-height: 550px) and (orientation: landscape) {
+  /* Container-Padding verringern, damit man nicht sofort scrollen muss */
+  .container {
+    padding: 60px 20px 30px 20px;
+  }
+
+  /* Header flacher machen */
+  header {
+    padding: 8px 20px;
+  }
+
+  /* Textgrößen leicht anpassen, damit sie nicht den Bildschirm sprengen */
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  /* 3-spaltige Grids im Querformat lieber 2-spaltig machen */
+  .cards,
+  .grid-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  /* Das Formular: Inputs nebeneinander lassen, wo es geht */
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Textarea im Querformat nicht zu hoch machen */
+  textarea {
+    min-height: 75px;
+  }
+}
+
+/* Fix für sehr kleine Smartphones im Hochformat/Querformat-Wechsel */
+@media (max-width: 600px) and (orientation: landscape) {
+  .cards,
+  .grid-cards {
+    grid-template-columns: 1fr; /* Bei extrem schmalen Bildschirmen doch 1-spaltig */
+  }
+}
